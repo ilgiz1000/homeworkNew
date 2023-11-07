@@ -26,7 +26,7 @@ public class Main {
 
         }
 
-        age = 12;
+        age = 16;
         if (age >= 2 && age <= 6) {
             System.out.println("Если возраст человека равен " + age + " ,то ему нужно ходить в детский сад");
 
@@ -40,6 +40,8 @@ public class Main {
             if (age > 24) {
                 System.out.println("Если возраст человека равен " + age + " ,то ему нужно ходить на работу");
             }
+        }
+
 
             age = 5;
             if (age < 5) {
@@ -54,28 +56,31 @@ public class Main {
                 }
 
 
-                int peopleInTheCarriage = 100;
+                int peopleInTheCarriage = 38;
                 int numberOfPassengerSeats = 102;
                 int numberOfStandingSeats = 60;
                 int numberOfSeats = 42;
-                boolean thereAreSeats = numberOfPassengerSeats > peopleInTheCarriage;
                 int freeSeets = numberOfPassengerSeats - peopleInTheCarriage;
                 int standingSeats = numberOfStandingSeats - peopleInTheCarriage;
+
+                boolean thereAreSeats = numberOfPassengerSeats > peopleInTheCarriage;
                 if (thereAreSeats) {
                     System.out.println("Места есть, " + "их осталось " + freeSeets);
 
                     if (peopleInTheCarriage <= numberOfStandingSeats) {
                         System.out.println("если пришедшие заняли сидячие, то их осталось " + standingSeats + ", остальные- стоячие");
                     }
-                    System.out.println("остались только стоячие места");
 
                 } else {
-                    boolean noSeats = numberOfPassengerSeats < peopleInTheCarriage;
+                    boolean noSeats = numberOfPassengerSeats <= peopleInTheCarriage;
                     if (noSeats) {
                         System.out.println("Автобус забит");
 
-                    }
                 }
+                }
+                }
+
+
 
 
 
@@ -95,7 +100,10 @@ public class Main {
             }
         }
 
-    }
 
-}
+
+
+
+
+
 
